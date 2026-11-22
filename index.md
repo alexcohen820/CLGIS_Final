@@ -5,13 +5,13 @@ For this project my data came from 3 sources: the American Community Survey 2023
 
 <figure style="text-align:center; margin:0 0 24px;">
   <img src="dc_grocery_distance.png"
-       style="max-width:600px; width:100%; height:auto;">
+       style="max-width:500px; width:100%; height:auto;">
   <figcaption><em>Distances are measured from tract centroids to the nearest grocery store.</em></figcaption>
 </figure>
 
 <figure style="text-align:center; margin:0 0 24px;">
   <img src="vehicle_ownership.png"
-       style="max-width:600px; width:100%; height:auto;">
+       style="max-width:500px; width:100%; height:auto;">
   <figcaption><em>Hatched tracts have unreliable estimates (CV &gt; 40). Gray tracts have missing data.</em></figcaption>
 </figure>
 ### Tracts at Risk of Poor Food Access, Washington DC
