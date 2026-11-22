@@ -1,5 +1,5 @@
 ![Map of distance to the nearest grocery store by tract in Washington DC](dc_grocery_distance.png)
-
+*Distances based on tract centroids.*
 ![Map of Census Tracts by Households with no Cars](vehicle_ownership.png)
 
 ### Tracts at Risk of Poor Food Access, Washington DC
