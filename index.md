@@ -3,17 +3,24 @@
 
 For this project my data came from 3 sources: the American Community Survey 2023, Census TIGER/Line shapefiles, and Open Data DC. DC maintains extensive public data records, including spatial datasets for a wide array of issues, including grocery store locations. This dataset was originally published in June 2012, but has been regularly updated since, with the latest update being in October, 2026. The dataset is maintained by the Office of the Chief Technology Officer (OCTO). This dataset was provided in GeoJSON format via the Open Data DC website. No cleaning or joins were needed to make this data mappable. For the ACS data I performed some cleaning to ensure null, missing, and unreliable values were handled properly. To calculate the distance for each tract from its nearest grocery store I performed a spatial join between the grocery store points and the tract polygons. Using “sjoin_nearest” I was able to get the distance in feet from each tracts centroid to its nearest store, and then symbolize that as a choropleth map. I acknowledge that using centroids to calculate distance from a tract is imprecise, at best, but it seemed the most straightforward approach for the purposes of this assignment.
 
-<figure style="text-align:center; margin:0 0 24px;">
-  <img src="dc_grocery_distance.png"
-       width="600">
-  <figcaption><em>Distances are measured from tract centroids to the nearest grocery store.</em></figcaption>
-</figure>
+<div align="center">
+  <figure>
+    <img src="dc_grocery_distance.png"
+         alt="Map of distance to the nearest grocery store by tract in Washington DC"
+         width="600">
+    <figcaption><em>Distances are measured from tract centroids to the nearest grocery store.</em></figcaption>
+  </figure>
+</div>
 
-<figure style="text-align:center; margin:0 0 24px;">
-  <img src="vehicle_ownership.png"
-       width="600">
-  <figcaption><em>Hatched tracts have unreliable estimates (CV &gt; 40). Gray tracts have missing data.</em></figcaption>
-</figure>
+<div align="center">
+  <figure>
+    <img src="vehicle_ownership.png"
+         alt="Map of Census tracts by share of households with no vehicle"
+         width="600">
+    <figcaption><em>Hatched tracts have unreliable estimates (CV &gt; 40). Gray tracts have missing data.</em></figcaption>
+  </figure>
+</div>
+
 ### Tracts at Risk of Poor Food Access, Washington DC
 
 <iframe src="dc_food_access_interactive.html"
