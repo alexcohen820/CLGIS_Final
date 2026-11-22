@@ -9,7 +9,7 @@ For this project my data came from 3 sources: the American Community Survey 2023
 ### Tracts at Risk of Poor Food Access, Washington DC
 
 <iframe src="dc_food_access_interactive.html"
-        width="100%" height="550"
+        width="100%" height="750"
         style="border:none;"
         title="Interactive map of food access risk in Washington DC"></iframe>
 
