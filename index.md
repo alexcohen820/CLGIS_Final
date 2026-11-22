@@ -3,9 +3,9 @@
 
 For this project my data came from 3 sources: the American Community Survey 2023, Census TIGER/Line shapefiles, and Open Data DC. DC maintains extensive public data records, including spatial datasets for a wide array of issues, including grocery store locations. This dataset was originally published in June 2012, but has been regularly updated since, with the latest update being in October, 2026. The dataset is maintained by the Office of the Chief Technology Officer (OCTO). This dataset was provided in GeoJSON format via the Open Data DC website. No cleaning or joins were needed to make this data mappable. For the ACS data I performed some cleaning to ensure null, missing, and unreliable values were handled properly. To calculate the distance for each tract from its nearest grocery store I performed a spatial join between the grocery store points and the tract polygons. Using “sjoin_nearest” I was able to get the distance in feet from each tracts centroid to its nearest store, and then symbolize that as a choropleth map. I acknowledge that using centroids to calculate distance from a tract is imprecise, at best, but it seemed the most straightforward approach for the purposes of this assignment.
 
-![Small Multiple of Grocery Distance and Car Ownership](dc_small_multiple.png)
+![Small Multiple of Grocery Distance and Car Ownership](dc_small_multiple1.png)
 
-![Map of distance to the nearest grocery store by tract in Washington DC](dc_grocery_distance1.png)
+![Map of distance to the nearest grocery store by tract in Washington DC](dc_grocery_distance.png)
 *Distances based on tract centroids.*
 ![Map of Census Tracts by Households with no Cars](vehicle_ownership.png)
 ### Tracts at Risk of Poor Food Access, Washington DC
