@@ -5,9 +5,7 @@ For this project my data came from 3 sources: the American Community Survey 2023
 
 ![Small Multiple of Grocery Distance and Car Ownership](dc_small_multiple1.png)
 
-![Map of distance to the nearest grocery store by tract in Washington DC](dc_grocery_distance.png)
-*Distances based on tract centroids.*
-![Map of Census Tracts by Households with no Cars](vehicle_ownership.png)
+
 ### Tracts at Risk of Poor Food Access, Washington DC
 
 <iframe src="dc_food_access_interactive.html"
